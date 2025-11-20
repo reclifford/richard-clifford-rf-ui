@@ -3,12 +3,12 @@ import logoGraphic from "../assets/logo/logo-rainfocus-icon.jpg";
 
 export default function Sidebar() {
   return (
-    <aside id="sidebar" className="flex flex-dir-col justify-between">
-      <div id="top" className="flex align-center flex-dir-col gap-24">
-        <button>
+    <aside id="sidebar" className="flex justify-between">
+      <div id="top" className="flex align-center gap-24">
+        <button className="flex">
           <img src={logoSmall} />
         </button>
-        <button>
+        <button className="flex">
           <img src={logoGraphic} />
         </button>
       </div>
