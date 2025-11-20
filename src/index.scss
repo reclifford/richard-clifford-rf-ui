@@ -1,0 +1,253 @@
+$font-family-primary: "Inter", Arial, sans-serif;
+$color-border: #cbc6de;
+$color-border: #cbc6de;
+$color-neutral-g3: #444444;
+$color-page-header: #222222;
+$color-txt-body: #393551;
+$color-primary-bg: #5c00dc;
+$color-txt-header: #222222;
+$color-txt-g3: #444444;
+$color-white: #ffffff;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-primary;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.flex-dir-col-rev {
+  flex-direction: column-reverse;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-col-3 {
+  grid-template-columns: 1fr;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid-col-3-221 {
+  grid-template-columns: 1fr;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 221px);
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 221px);
+  }
+}
+
+.gap-4 {
+  gap: 4px;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-40 {
+  gap: 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+  color: $color-page-header;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-txt-g3;
+}
+
+h4 b {
+  color: $color-txt-header;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 13px;
+  font-weight: bold;
+  color: $color-page-header;
+}
+
+p {
+  color: $color-txt-body;
+  margin: 0;
+}
+
+button {
+  width: fit-content;
+  background-color: $color-primary-bg;
+  color: $color-white;
+  border: 0;
+  height: fit-content;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+#sidebar {
+  width: 63px;
+  height: 100%;
+  background-color: $color-white;
+  padding: 12px 7.5px;
+  border-left: 1px solid $color-border;
+  border-right: 1px solid $color-border;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  button {
+    background-color: transparent;
+    padding: 0;
+
+    img {
+      width: 32px;
+    }
+  }
+
+  #nav-user {
+    width: 48px;
+    height: 40px;
+    cursor: pointer;
+
+    div {
+      width: 32px;
+      height: 32px;
+      background-color: $color-neutral-g3;
+      color: $color-white;
+      border-radius: 50%;
+      font-size: 16px;
+      line-height: 18.2px;
+    }
+  }
+}
+
+header {
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  img {
+    width: 100%;
+    max-width: 75px;
+    height: fit-content;
+
+    @media (min-width: 768px) {
+      max-width: 95px;
+    }
+  }
+}
+
+main {
+  padding: 32px 24px;
+
+  @media (min-width: 768px) {
+    padding: 40px 48px;
+    margin-left: 63px;
+  }
+}
+
+#accordion {
+  header img {
+    width: 35px;
+  }
+
+  .row {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      gap: 16px 24px;
+    }
+  }
+}
+
+.card {
+  padding: 20px 24px;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+
+  @media (min-width: 768px) {
+    padding: 24px 32px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
