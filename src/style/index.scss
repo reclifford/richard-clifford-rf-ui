@@ -1,6 +1,6 @@
 $font-family-primary: "Inter", Arial, sans-serif;
 $color-border: #cbc6de;
-$color-border: #cbc6de;
+$color-border-rgba: rgba(203, 198, 222, 0.25);
 $color-neutral-g3: #444444;
 $color-page-header: #222222;
 $color-txt-body: #393551;
@@ -8,6 +8,7 @@ $color-primary-bg: #5c00dc;
 $color-txt-header: #222222;
 $color-txt-g3: #444444;
 $color-white: #ffffff;
+$transition-25: 0.25s;
 
 *,
 *::before,
@@ -153,6 +154,12 @@ button {
   border-radius: 4px;
   padding: 8px 16px;
   cursor: pointer;
+  transition: all $transition-25 ease;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all $transition-25 ease;
+  }
 }
 
 #sidebar {
@@ -251,6 +258,17 @@ header {
 
     @media (min-width: 768px) {
       gap: 16px 24px;
+    }
+
+    .card {
+      cursor: pointer;
+      transition: all $transition-25 ease;
+
+      &:hover {
+        transform: scale(1.025);
+        background-color: $color-border-rgba;
+        transition: all $transition-25 ease;
+      }
     }
   }
 }

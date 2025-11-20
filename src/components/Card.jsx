@@ -1,3 +1,3 @@
-export default function Card({ children, layout }) {
+export default function Card({ children }) {
   return <div className="card">{children}</div>;
 }
