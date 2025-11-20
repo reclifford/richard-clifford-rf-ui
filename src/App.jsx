@@ -1,4 +1,4 @@
-import Sidebar from "./components/sidebar";
+import Sidebar from "./components/Sidebar";
 import Main from "./components/Main";
 import Header from "./components/Header";
 import Accordion from "./components/Accordion";

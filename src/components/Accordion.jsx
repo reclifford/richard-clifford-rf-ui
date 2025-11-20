@@ -1,11 +1,11 @@
-import PersonPortal from "../assets/personalPortal.svg";
 import Card from "./Card";
 import Item from "./Item";
+import Step from "./Step";
+import Row from "./Row";
+import PersonPortal from "../assets/personalPortal.svg";
 import utilityArrow from "../assets/utility-arrow.svg";
 import utilityComputer from "../assets/utility-computer.svg";
 import utilityCircleOutline from "../assets/utility-add-circle-outline.svg";
-import Step from "./Step";
-import Row from "./Row";
 
 export default function Accordion() {
   return (
