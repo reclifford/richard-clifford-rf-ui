@@ -197,6 +197,8 @@ button {
   button {
     background-color: transparent;
     padding: 0;
+    transform: none;
+    transition: none;
 
     img {
       width: 32px;
