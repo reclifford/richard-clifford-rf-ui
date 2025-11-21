@@ -25,6 +25,10 @@ body {
   display: flex;
 }
 
+.flex-dir-row {
+  flex-direction: row;
+}
+
 .flex-dir-col {
   flex-direction: column;
 }
@@ -47,6 +51,10 @@ body {
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .grid {

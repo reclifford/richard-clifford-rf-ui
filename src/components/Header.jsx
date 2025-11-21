@@ -2,7 +2,7 @@ import Logo from "../assets/logo/logo-rainfocus-icon.jpg";
 
 export default function Header() {
   return (
-    <header className="flex flex-dir-col-rev justify-between gap-24">
+    <header className="flex flex-dir-row flex-wrap justify-between gap-24">
       <div id="header-content" className="flex gap-16">
         <img src={Logo} alt="RainFocus" />
         <div id="header-copy" className="flex flex-dir-col gap-8">
